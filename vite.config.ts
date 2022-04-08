@@ -1,15 +1,15 @@
-import { fileURLToPath, URL } from 'url'
+import { fileURLToPath, URL } from "url";
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import inject from '@rollup/plugin-inject'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import inject from "@rollup/plugin-inject";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),inject({ Buffer: ['buffer', 'Buffer'] })],
+  plugins: [vue(), inject({ Buffer: ["buffer", "Buffer"] })],
   build: {
     rollupOptions: {
-      plugins: [inject({ Buffer: ['buffer', 'Buffer'] })],
+      plugins: [inject({ Buffer: ["buffer", "Buffer"] })],
     },
     commonjsOptions: {
       transformMixedEsModules: true,
@@ -17,11 +17,11 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
   },
   define: {
-    "global": {},
-    'process.env': {}
-  }
-})
+    global: {},
+    "process.env": {},
+  },
+});

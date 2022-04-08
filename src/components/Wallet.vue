@@ -6,11 +6,11 @@ import {
   displayChainName,
   displayEther,
   shortenAddress,
-} from 'vue-dapp'
+} from "vue-dapp";
 
-const { open } = useBoard()
-const { status, disconnect, error } = useWallet()
-const { address, balance, chainId, isActivated } = useEthers()
+const { open } = useBoard();
+const { status, disconnect, error } = useWallet();
+const { address, balance, chainId, isActivated } = useEthers();
 </script>
 
 <template>
@@ -35,11 +35,11 @@ const { address, balance, chainId, isActivated } = useEthers()
         :disabled="status === 'connecting'"
       >
         {{
-          status === 'connected'
-            ? 'Disconnect'
-            : status === 'connecting'
-            ? 'Connecting...'
-            : 'Connect'
+          status === "connected"
+            ? "Disconnect"
+            : status === "connecting"
+            ? "Connecting..."
+            : "Connect"
         }}
       </button>
     </div>
