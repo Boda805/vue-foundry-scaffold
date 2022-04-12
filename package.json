@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.2.31",
-    "vue-dapp": "^0.4.8"
+    "vue-dapp": "^0.4.9-beta.0"
   },
   "devDependencies": {
     "@rollup/plugin-inject": "^4.0.4",
