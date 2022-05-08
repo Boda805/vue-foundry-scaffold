@@ -1,7 +1,6 @@
 # Vue Foundry Scaffold - WIP
 
-This is a scaffold-eth inspired template to get started with a fullstack ethereum app project. Bootstrapped with create-vue, vue-dapp, and foundry. Currently setup to deploy to Goerli, while foundry
-local node is in the PR stage (tracked here: https://github.com/gakonst/foundry/pull/1037).
+This is a scaffold-eth inspired template to get started with a fullstack ethereum app project, just using different tools. Bootstrapped with create-vue, vue-dapp, and foundry.
 
 ## Recommended IDE Setup
 
@@ -22,14 +21,19 @@ npm install
 ## Run Tests
 
 ```sh
-cd contracts
+cd src/contracts
 forge test
+```
+
+## Run Local Node
+
+```sh
+anvil
 ```
 
 ## Deploy to Chain
 
 ```sh
-cd contracts
 forge create --rpc-url <your_rpc_url> --private-key <your_private_key> src/MyToken.sol:MyToken
 ```
 
