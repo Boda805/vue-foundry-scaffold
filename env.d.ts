@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
 
 export enum Contracts {
-  TOKEN_ADDRESS = "0x861b9ecc534f27a57e8f8c2cf5bc9e886f56a9b0",
+  TOKEN_ADDRESS = "0x5fbdb2315678afecb367f032d93f642f64180aa3",
 }

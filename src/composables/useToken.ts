@@ -27,7 +27,6 @@ export function useToken(addr: string) {
       ERC20Interface,
       signer.value!
     );
-
     const result = await tokenContract.transfer(to, amount);
 
     console.log(result);
@@ -35,7 +34,6 @@ export function useToken(addr: string) {
 
   return {
     balance,
-
     getBalance,
     sendToken,
   };
